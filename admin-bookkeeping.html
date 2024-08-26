@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Retail.ly | Bookkeeping</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Retail.ly">
+<meta name="keywords" content="Retail.ly">
+<meta name="author" content="Retail.ly">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
+<link rel="stylesheet" href="assets/vendor/sweetalert/sweetalert.css"/>
+
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="assets/css/site.min.css">
+
+</head>
+<body class="theme-cyan font-montserrat light_version">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+    </div>
+</div>
+
+<!-- Theme Setting -->
+<div class="themesetting">
+    <a href="javascript:void(0);" class="theme_btn"><i class="icon-magic-wand"></i></a>
+    <div class="card theme_color">
+        <div class="header">
+            <h2>Theme Color</h2>
+        </div>
+        <ul class="choose-skin list-unstyled mb-0">
+            <li data-theme="green"><div class="green"></div></li>
+            <li data-theme="orange"><div class="orange"></div></li>
+            <li data-theme="blush"><div class="blush"></div></li>
+            <li data-theme="cyan" class="active"><div class="cyan"></div></li>
+            <li data-theme="indigo"><div class="indigo"></div></li>
+            <li data-theme="red"><div class="red"></div></li>
+        </ul>
+    </div>
+    <div class="card font_setting">
+        <div class="header">
+            <h2>Font Settings</h2>
+        </div>
+        <div>
+            <div class="fancy-radio mb-2">
+                <label><input name="font" value="font-krub" type="radio"><span><i></i>Krub Google font</span></label>
+            </div>
+            <div class="fancy-radio mb-2">
+                <label><input name="font" value="font-montserrat" type="radio" checked><span><i></i>Montserrat Google font</span></label>
+            </div>
+            <div class="fancy-radio">
+                <label><input name="font" value="font-roboto" type="radio"><span><i></i>Robot Google font</span></label>
+            </div>
+        </div>
+    </div>
+    <div class="card setting_switch">
+        <div class="header">
+            <h2>Settings</h2>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                Light Version
+                <div class="float-right">
+                    <label class="switch">
+                        <input type="checkbox" class="lv-btn" checked="">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </li>
+            
+            <li class="list-group-item">
+                Horizontal Henu
+                <div class="float-right">
+                    <label class="switch">
+                        <input type="checkbox" class="hmenu-btn" >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </li>
+            <li class="list-group-item">
+                Mini Sidebar
+                <div class="float-right">
+                    <label class="switch">
+                        <input type="checkbox" class="mini-sidebar-btn">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+
+<div id="wrapper">
+
+   
+    <div class="search_div">
+        <div class="card">
+            <div class="body">
+                <form id="navbar-search" class="navbar-form search-form">
+                    <div class="input-group mb-0">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                            <a href="javascript:void(0);" class="search_toggle btn btn-danger"><i class="icon-close"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>            
+        </div>
+        <span>Search Result <small class="float-right text-muted">About 90 results (0.47 seconds)</small></span>
+        <div class="table-responsive">
+            <table class="table table-hover table-custom spacing5">
+                <tbody>
+                    <tr>
+                        <td class="w40">
+                            <span>01</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="avtar-pic w35 bg-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>SS</span></div>
+                                <div class="ml-3">
+                                    <a href="page-invoices-detail.html" title="">South Shyanne</a>
+                                    <p class="mb-0">south.shyanne@example.com</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>02</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Zoe Baker</a>
+                                    <p class="mb-0">zoe.baker@example.com</p>
+                                </div>
+                            </div>                                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>03</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                    <div class="avtar-pic w35 bg-indigo" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>CB</span></div>
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Colin Brown</a>
+                                    <p class="mb-0">colinbrown@example.com</p>
+                                </div>
+                            </div>                                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>04</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="avtar-pic w35 bg-green" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>KG</span></div>
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Kevin Gill</a>
+                                    <p class="mb-0">kevin.gill@example.com</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>05</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Brandon Smith</a>
+                                    <p class="mb-0">Maria.gill@example.com</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>06</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Kevin Baker</a>
+                                    <p class="mb-0">kevin.baker@example.com</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>07</span>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+                                <div class="ml-3">
+                                    <a href="javascript:void(0);" title="">Zoe Baker</a>
+                                    <p class="mb-0">zoe.baker@example.com</p>
+                                </div>
+                            </div>                                        
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+
+    <div id="rightbar" class="rightbar">
+        <div class="body">
+            <ul class="nav nav-tabs2">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Chat-list">List</a></li>
+<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Chat-one">Chat</a></li>
+                
+            </ul>
+            <hr>
+            <div class="tab-content">
+                <div class="tab-pane vivify fadeIn delay-100" id="Chat-one">
+                    <div class="chat_detail">
+                        <ul class="chat-widget clearfix">
+                            <li class="left float-left">
+                                <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+                                <div class="chat-info">       
+                                    <span class="message">Hello, John<br>What is the update on Project X?</span>
+                                </div>
+                            </li>
+                            <li class="right">
+                                <img src="assets/images/xs/avatar1.jpg" class="rounded" alt="">
+                                <div class="chat-info">
+                                    <span class="message">Hi, Alizee<br> It is almost completed. I will send you an email later today.</span>
+                                </div>
+                            </li>
+                            <li class="left float-left">
+                                <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+                                <div class="chat-info">
+                                    <span class="message">That's great. Will catch you in evening.</span>
+                                </div>
+                            </li>
+                            <li class="right">
+                                <img src="assets/images/xs/avatar1.jpg" class="rounded" alt="">
+                                <div class="chat-info">
+                                    <span class="message">Sure we'will have a blast today.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="input-group mb-0">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <a href="javascript:void(0);" class=""><i class="icon-camera text-warning"></i></a>
+                                </span>
+                            </div>
+                            <textarea type="text" row="" class="form-control" placeholder="Enter text here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane vvivify fadeIn delay-100 active" id="Chat-list">
+                    <ul class="right_chat list-unstyled mb-0">
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-red"><span>FC</span></div>
+                                    <div class="media-body">
+                                        <span class="name unread">Folisise Chosielie</span>
+                                        <span class="message">offline</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name unread">Marshall Nichols</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-red"><span>FC</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Louis Henry</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-orange"><span>DS</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Debra Stewart</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-green"><span>SW</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Lisa Garett</span>
+                                        <span class="message">offline since May 12</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">Debra Stewart</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                    <div class="media-body">
+                                        <span class="name">Lisa Garett</span>
+                                        <span class="message">offline since Jan 18</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-indigo"><span>FC</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Louis Henry</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="online">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-pink"><span>DS</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Debra Stewart</span>
+                                        <span class="message">online</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li class="offline">
+                            <a href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="avtar-pic w35 bg-info"><span>SW</span></div>
+                                    <div class="media-body">
+                                        <span class="name">Lisa Garett</span>
+                                        <span class="message">offline since May 12</span>
+                                        <span class="badge badge-outline status"></span>
+                                    </div>
+                                </div>
+                            </a>                            
+                        </li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+   <div id="left-sidebar" class="sidebar">
+        <div class="navbar-brand">
+            <a href="admin-dashboard.html"><span>Retail.ly</span></a>
+            <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu icon-close"></i></button>
+        </div>
+        <div class="sidebar-scroll">
+            <div class="user-account">
+                <div class="user_div">
+                    <img src="assets/images/admin.png" class="user-photo" alt="Admin Profile Picture">
+                </div>
+                <div class="dropdown">
+                    <span>Welcome,</span>
+                    <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Admin</strong></a>
+                    <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
+                        <li><a href="admin-profile.html"><i class="icon-user"></i>My Profile</a></li>
+                        <li><a href="#"><i class="icon-envelope-open"></i>Messages</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="stylist-login.html"><i class="icon-power"></i>Logout</a></li>
+                    </ul>
+                </div>                
+            </div>  
+             <nav id="left-sidebar-nav" class="sidebar-nav">
+                <ul id="main-menu" class="metismenu">
+                    <li class="header">Main</li>
+                    <li><a href="admin-dashboard.html"><i class="icon-home"></i><span>Admin Dashboard</span></a></li>
+                    <li><a href="admin-booking.html"><i class="icon-calendar"></i><span>Bookings</span></a></li>
+					 <li><a href="admin-booking-settings.html"><i class="icon-settings"></i><span>Booking Settings </span></a></li>
+					<li><a href="javascript:void(0);" onclick="ulrclickdata();" aria-expanded="true"><i class="icon-drawer"></i><span>Orders</span></a>
+						<ul aria-expanded="true" class="collapse in">
+							 <li><a href="admin-goods-sold.html"><span>Goods Sold</span></a></li>
+							 <li><a href="admin-assets.html"><span>Assets</span></a></li>
+						 </ul>
+					 </li>
+					 <li><a href="admin-inventory.html"><i class="icon-calculator"></i><span>Inventory</span></a></li>
+					<li><a href="admin-previous-inventory.html"><i class="icon-folder-alt"></i><span>Previous Inventory</span></a></li>
+					 <li class="active open"><a href="admin-bookkeeping.html"><i class="icon-pie-chart"></i><span>Bookkeeping</span></a></li>
+					 <li><a href="admin-profile.html"><i class="icon-user"></i><span>Profile</span></a></li>
+                    <li><a href="admin-hours.html"><i class="fa fa-hourglass-o"></i><span>Hours</span></a></li>
+                   <li><a href="admin-analytics.html"><i class="icon-bar-chart"></i><span>Analytics</span></a></li>
+                </ul>
+            </nav>  
+        </div>
+    </div>
+   <div id="main-content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Bookkeeping</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="admin-dashboard.html">Retail.ly</a></li>
+                             
+                            <li class="breadcrumb-item active" aria-current="page">Bookkeeping</li>
+                            </ol>
+                        </nav>
+                    </div>            
+                    <div class="col-md-6 col-sm-12 text-right hidden-xs">
+				  		<a href="javascript:void(0);" class="btn btn-sm btn-primary btn-round" title="" data-toggle="modal" data-target=".addreceipt">Add New Receipt</a> 
+						<a href="javascript:void(0);" class="btn btn-sm btn-primary btn-round" title="" data-toggle="modal" data-target=".export">Export Receipt</a>
+						          <a href="javascript:void(0);" class="btn btn-sm btn-danger btn-round" title="Delete">Delete</a>
+                    </div>
+                </div>
+				
+				
+				
+            </div>
+            <div class="row clearfix">
+				
+				<div class="col-md-12">
+                    <div class="card">
+                        <div class="body">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Receipts...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+				
+				
+				
+				
+                <div class="col-lg-12">
+                    <div class="table-responsive invoice_list mb-4">
+                        <table class="table table-hover table-custom spacing8">
+                            <thead>
+                                <tr> 
+                                    <th class="text-center" style="width: 20px;"></th>
+									<th class="text-center"  style="width: 20px;">#</th>
+									<th style="width: 20px;" class="table table-custom2 table-hover ">Item Image</th>
+									<th style="width: 20px;" class="table table-custom2 table-hover ">Item Name</th>
+									<th  class="table table-custom2 table-hover ">Item Details</th>
+									<th>Receipt Date</th>
+									<th class="text-center" style="width: 20px;">Category of Use</th>
+                                    <th class="text-center" style="width: 50px;">Amount</th>
+                                    <th class="text-center" style="width: 50px;">Vendor</th>
+                                    <th class="text-center" style="width: 110px;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+									<td>
+                                         <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+									<td>
+                                        <span>01</span>
+                                    </td>
+									<td class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></td>
+									<td class="table table-custom2 table-hover">Item Name 1</td>
+									<td class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+									  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+								    when an unknown printer took a galley of type and scrambled it to make <br>
+								    a type specimen book. </td>
+									<td>
+                                        <div class="d-flex align-items-center">
+                                             
+                                            <div class="ml-3">
+                                                
+                                                <p class="mb-0">2/21/18 <br>
+                                                at 6:20pm</p>
+                                            </div>
+                                        </div>                                        
+                                    </td>
+									
+									<td>
+                                      <p class="mb-0">Advertising</p>                                
+                                    </td>
+                                    <td>$30.6 </td>
+                                    <td><span class="ml-0 mr-0">Home Depot</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+										 
+                                    </td>
+                                </tr>
+                                <tr>
+                                     <td>
+                                         <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+									<td>
+                                        <span>02</span>
+                                    </td>
+									<td class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></td>
+									<td class="table table-custom2 table-hover">Item Name 2</td>
+									<td class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </td>
+									<td>
+                                        <div class="d-flex align-items-center">
+                                             
+                                            <div class="ml-3">
+                                                2/21/18<br>
+at 7pm </div>
+                                        </div>                                        
+                                    </td>
+									<td>
+                                      <p class="mb-0">Office Expenses</p>                                
+                                    </td>
+                                    <td>$55</td>
+                                    <td><span class="ml-0 mr-0"> CVS Pharmacy</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                         <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+                               <tr>
+                                   <td>
+                                        <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+								   <td>
+                                        <span>03</span>
+                                    </td>
+								   <td class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></td>
+								   <td class="table table-custom2 table-hover">Item Name 3</td>
+								   <td class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </td>
+								   <td>
+                                       <div class="d-flex align-items-center">
+                                             
+                                           <div class="ml-3">
+                                             2/22/18 <br>
+                                           at 11am </div>
+                                       </div>                                        
+                                    </td>
+								   <td>
+                                      <p class="mb-0">Advertising</p>                                
+                                    </td>
+                                    <td>$80</td>
+                                    <td><span class="ml-0 mr-0"> Walgreens</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                         <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+                               <tr>
+                                   <td>
+                                       <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td> 
+								   <td>
+                                        <span>04</span>
+                                    </td>
+								   <td class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></td>
+								   <td class="table table-custom2 table-hover">Item Name 4</td>
+								   <td class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </td>
+								   <td>
+                                       <div class="d-flex align-items-center">
+                                             
+                                           <div class="ml-3">
+                                              2/23/18 <br>
+                                           at 2pm </div>
+                                       </div>                                        
+                                    </td>
+								   <td>
+                                      <p class="mb-0">Advertising</p>                                
+                                    </td>
+                                    <td>$40 
+</td>
+                                    <td><span class="ml-0 mr-0"> Home Depot</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+									 <td>
+                                        <span>05</span>
+                                    </td>
+									 <td><span class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></span></td>
+									 <td><span class="table table-custom2 table-hover">Item Name 5</span></td>
+									 <td><span class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                             
+                                            <div class="ml-3">
+                                               2/23/18 <br>
+                                            at 4pm </div>
+                                        </div>                                        
+                                    </td>
+									<td>
+                                      <p class="mb-0">Repairs and<br>
+Maintenance</p>                                
+                                    </td>
+                                    <td>$87.5 </td>
+                                    <td><span class="ml-0 mr-0">CVS Pharmacy</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                         <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+                               <tr>
+                                    <td>
+                                        <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+								    <td>
+                                        <span>06</span>
+                                    </td>
+								    <td><span class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></span></td>
+								    <td><span class="table table-custom2 table-hover">Item Name 6</span></td>
+								    <td><span class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                             
+                                            <div class="ml-3">
+                                                2/24/18 <br>
+                                            at 6pm </div>
+                                        </div>                                        
+                                    </td>
+								   <td>
+                                      <p class="mb-0">Advertising</p>                                
+                                    </td>
+                                    <td>$40 </td>
+                                    <td><span class="ml-0 mr-0"> Home Depot</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default " title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                         <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+								
+								<tr>
+                                    <td>
+                                         <label class="fancy-checkbox margin-0">
+                                            <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                            <span></span>
+                                        </label>
+                                    </td>
+									
+									  <td>
+                                        <span>07</span>
+                                    </td>
+									  <td><span class="table table-custom2 table-hover"><a href="" data-toggle="modal" data-target=".item-modal-sm"><img src="assets/images/product/purcesitem.jpg" alt="product images" width="80" height="80"/></a></span></td>
+									  <td><span class="table table-custom2 table-hover">Item Name 7</span></td>
+									  <td><span class="table table-custom2 table-hover"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+when an unknown printer took a galley of type and scrambled it to make <br>
+a type specimen book. </span></td>
+									
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                             
+                                            <div class="ml-3">
+                                               2/24/18<br>
+at 7pm </div>
+                                        </div>                                        
+                                    </td>
+                                    <td><span class="mb-0">Advertising</span></td>
+									<td>
+                                      <p class="mb-0">$60</p>                                
+                                    </td>
+                                    <td><span class="ml-0 mr-0"> Walgreens</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-default" title="Export" data-toggle="tooltip" data-placement="top"><i class="icon-envelope"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default" title="Print" data-toggle="tooltip" data-placement="top"><i class="icon-printer"></i></button>
+                                        <button type="button" class="btn btn-sm btn-default js-sweetalert" title="Delete" data-type="confirm" data-toggle="tooltip" data-placement="top"><i class="icon-trash"></i></button>
+                                    </td>
+                                </tr>
+                               
+                                 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+	
+	
+	 <!-- Add Receipt-->
+         <div class="modal fade addreceipt"  tabindex="-1" role="dialog" aria-labelledby="addreceiptCenter" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="addreceiptCenter">Add Receipt</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row clearfix">
+              								  <div class="col-12">
+												  <div class="form-group">
+											 <input class="form-control round mr-2" type="text" placeholder="Item Name"/> <br>
+											   </div> 
+												  <div class="form-group">
+											  <select id="single-selection" name="single_selection" class="multiselect multiselect-custom form-control round mr-2">
+                                            <option value="">Select Category of Use</option>
+											<option value="">Advertising</option>
+											<option value="">Auto Expense - Gas</option>
+											<option value="">Auto Expense - Parking</option>
+											<option value="">Auto Expense - Repair and maintenance</option>
+											<option value="">Office Expenses</option>
+											<option value="">Cleaning & Janitorial</option>
+											<option value="">Licenses, Fees & Permits</option>
+											<option value="">Meals & Entertainment</option>
+											<option value="">Postage & Delivery</option>
+											<option value="">Outside Service</option>
+											<option value="">Rent - Equipment</option>
+											<option value="">Rent - Business</option>
+											<option value="">Repairs and Maintenance</option>
+											<option value="">Charitable Contributions</option>
+											<option value="">Dues & Subscriptions</option>
+											<option value="">Laundry & Uniforms</option>
+											<option value="">Supplies - General</option>
+											<option value="">Supplies - Office</option>
+											<option value="">Advertising</option>
+											<option value="">Auto Expense - Gas</option>
+											<option value="">Auto Expense - Parking</option>
+											<option value="">Auto Expense - Repair and maintenance</option>
+											<option value="">Cleaning & Janitorial</option>
+											<option value="">Outside Service</option>
+											<option value="">Meals & Entertainment</option>
+											<option value="">Postage & Delivery</option>
+											<option value="">Rent - Equipment</option>
+											<option value="">Repairs and Maintenance</option> 
+											<option value="">Auto Expense- Insurance</option>
+											<option value="">Licenses, Fees & Permits</option>
+												<option value="">Rent - Business</option>
+												<option value="">Charitable Contributions</option>
+												<option value="">Dues & Subscriptions</option>
+												<option value="">Telephone, Cable & Internet</option>
+												<option value="">Laundry & Uniforms</option>
+												<option value="">Security Services</option>
+												<option value="">Travel & Lodging</option>
+												<option value="">Utilities</option>
+												<option value="">Accounting Fees</option>
+												<option value="">Computer & Software Services</option>
+												<option value="">Bank and Credit Card Fees</option>
+												<option value="">Contracted Labor</option>
+												<option value="">Insurance - Business</option>
+												<option value="">Legal & Professional Fees</option>
+                                             
+                                        </select> <br>
+											   </div> 
+												  
+												  <div class="form-group">
+											 <input class="form-control round mr-2" type="text" placeholder="Price"/> <br>
+											   </div> 
+												  
+												   <div class="form-group">
+											 <input class="form-control round mr-2" type="text" placeholder="Vendor"/> <br>
+											   </div> 
+												  
+												  <div class="form-group">
+											 			
+											<label>Upload Receipt Image </label>
+									<div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                    <label class="custom-file-label" for="inputGroupFile01"></label>
+                                </div>		
+								
+											   </div>
+												  
+												   <div class="form-group">
+													  <textarea class="form-control" placeholder="Add Item destails notes"  rows="3"></textarea>
+											   </div>
+												  
+                							  </div>
+												
+											</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-round btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-round btn-primary">Add Receipt</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+	
+	
+	
+	
+	
+	<!-- Export Modal -->
+	
+	  <div class="modal fade export"  tabindex="-1" role="dialog" aria-labelledby="exportsenter" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exportsenter">Export ReceIpts</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row clearfix">
+              								  <div class="col-12">
+												 
+ 												  
+												 <div class="body">
+                            
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#excel">EXPORT AS EXCEL FILE
+</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sms">EXPORT TO SMS
+</a></li>
+                                 
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane show vivify fadeIn active" id="excel">
+                                     <form>
+										   <button type="button" class="btn btn-round btn-primary">Save As</button>
+										</form>
+                                </div>
+                                <div class="tab-pane vivify fadeIn" id="sms">
+                                     <form>
+										  <div class="form-group">
+											 
+											<input type="text" class="form-control" placeholder="Enter Phone Number">
+											 
+										  </div>
+										   
+										<button type="button" class="btn btn-round btn-primary">Export</button>
+										</form>
+                                </div>
+                                
+                            </div>
+                        </div>
+												  
+												  
+												  
+												  
+                							  </div>
+												
+											</div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-round btn-default" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+	 
+	
+	   
+                           
+	
+	<!-- Image Small modal -->
+           <div class="modal fade item-modal-sm" tabindex="-1" role="dialog" aria-labelledby="itemLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title h4" id="itemLabel">Item Image</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                             <img class="img-fluid" src="assets/images/product/purcesitem-full-size.jpg"  alt="itemimage"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+
+	<!-- SweetAlert Plugin Js -->
+<script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+<script src="assets/js/pages/ui/dialogs.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,405 @@
+
+.mainbar{
+    height: 120px;
+    width: 100%; 
+}
+.mainbar:nth-of-type(1){
+    margin: 10% auto 0 auto !important;
+}
+.progress{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+	margin-top: 0;
+    margin-bottom: 5%;
+    box-shadow: 8px 9px 5px #b9b3b3;
+    height: 15px;
+    border-radius: 4px;
+    overflow: unset;
+	position: relative;
+
+}
+.bg-success{
+    width: 30%;
+    float: left;
+    margin: 0 auto;
+    background: #08a208!important;
+    overflow: inherit;
+}
+.bg-info{
+    width: 20%;
+    float: right;
+    margin: 0 auto;
+    background: #08a208!important;
+}
+.date, .type, .progress{
+    float: left;
+
+}
+.type{
+    text-align: center;
+}
+.date{
+    line-height: .8;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #56585a; 
+}
+ 
+
+
+#postionbarstartm1{
+            left: 8.5%;
+           }
+#postionbarendm1{
+            left: 37%;
+           }
+  
+#postionbarstartm2{
+            left: 61.5%;
+           }
+#postionbarendm2{
+            left: 80.10%;
+           }
+
+
+#postionbarstartt1{
+            left: 8.5%;
+           }
+#postionbarendt1{
+            left: 37%;
+           }
+  
+#postionbarstartt2{
+            left:  61.5%;
+           }
+#postionbarendt2{
+            left: 80.10%;
+           }
+
+
+#postionbarstartw1{
+            left: 8.5%;
+           }
+#postionbarendw1{
+            left: 37%;
+           }
+  
+#postionbarstartw2{
+            left: 61.5%;
+           }
+#postionbarendw2{
+            left: 80.10%;
+           }
+
+
+#postionbarstartth1{
+            left: 38.5%;
+           }
+#postionbarendth1{
+            left: 64%;
+           }
+  
+
+#postionbarstartf1{
+            left: 8.5%;
+           }
+#postionbarendf1{
+            left: 37%;
+           }
+  
+#postionbarstartf2{
+            left: 61.5%;
+           }
+#postionbarendf2{
+            left: 80.10%;
+           }
+
+
+#postionbarstarts1{
+            left: 38.5%;
+           }
+#postionbarends1{
+            left: 64%;
+           }
+  
+#postionbarstarts2{
+            left: 63.5%;
+           }
+#postionbarends2{
+            left: 82.9%;
+           }
+
+#postionbarstartsu1{
+             left: 8.5%;
+           }
+#postionbarendsu1{
+             left: 36.5%;
+           }
+  
+#postionbarstartsu2{
+            left: 61.5%;
+           }
+#postionbarendsu2{
+            left: 80%;
+           }
+
+
+
+
+
+.timesbar{
+	 width: 73px;
+     position: absolute;
+    text-align: center;
+    background: #1ba268;
+    color: #FFF;
+    
+    border-radius: 6px;
+	bottom: 25px;
+    
+  
+    
+    
+}
+.timesbar::after{
+    all: initial;
+	display: inline-block;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;		  
+	border-top: 10px solid #1ba268;
+	position: absolute;
+	top: 100%;
+	content: '';
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-bottom: 5px;
+	}
+ 
+ 
+.timesbar 
+{
+    box-shadow: 4px 4px 8px 1px #e1dede;
+
+}
+ 
+ /* startr rular */
+.ruler {
+ position: relative;
+ width: 100%;
+ margin: 20px auto;
+ height: 14px;
+}
+.ruler .cm,
+.ruler .mm {
+ position: absolute;
+ border-left: 1px solid #555;
+ height: 14px;
+ width: 12%;
+}
+.ruler .cm:after {
+ position: absolute;
+ bottom: -15px;
+ font: 11px/1 sans-serif;
+}
+.ruler .mm {
+ height: 5px;
+}
+.ruler .mm:nth-of-type(5) {
+ height: 10px;
+}
+.ruler .cm:nth-of-type(1) {
+ left: 0%;
+}
+.ruler .cm:nth-of-type(1):after {
+ content: "08 AM";
+}
+.ruler .cm:nth-of-type(2) {
+ left: 12.5%;
+}
+.ruler .cm:nth-of-type(2):after {
+ content: "10 AM";
+}
+.ruler .cm:nth-of-type(3) {
+ left: 25%;
+}
+.ruler .cm:nth-of-type(3):after {
+ content: "12 PM";
+}
+.ruler .cm:nth-of-type(4) {
+ left: 37.5%;
+}
+.ruler .cm:nth-of-type(4):after {
+ content: "02 PM";
+}
+.ruler .cm:nth-of-type(5) {
+ left: 50%;
+}
+.ruler .cm:nth-of-type(5):after {
+ content: "04 PM";
+}
+.ruler .cm:nth-of-type(6) {
+ left: 62.5%;
+}
+.ruler .cm:nth-of-type(6):after {
+ content: "06 PM";
+}
+.ruler .cm:nth-of-type(7) {
+ left: 75%;
+}
+.ruler .cm:nth-of-type(7):after {
+ content: "08 PM";
+}
+.ruler .cm:nth-of-type(8) {
+ left: 87.5%;
+}
+.ruler .cm:nth-of-type(8):after {
+ content: "10 PM";
+}
+.ruler .cm:nth-of-type(9) {
+ left: 100%;
+}
+ 
+.ruler .mm:nth-of-type(1) {
+ left: 12.5%;
+}
+.ruler .mm:nth-of-type(2) {
+ left: 25%;
+}
+.ruler .mm:nth-of-type(3) {
+ left: 37.5%;
+}
+.ruler .mm:nth-of-type(4) {
+ left: 50%;
+}
+.ruler .mm:nth-of-type(5) {
+ left: 62.5%;
+}
+.ruler .mm:nth-of-type(6) {
+ left: 75%;
+}
+.ruler .mm:nth-of-type(7) {
+ left: 87.5%;
+}
+.ruler .mm:nth-of-type(8) {
+ left: 100%;
+}
+
+#mentionme{  
+  text-align:center;
+  margin-top:10%;
+}
+
+ 
+
+
+/*start media*/
+/********************************************/
+
+
+/*start ruler*/
+@media (min-width:320px) and (max-width:500px){
+    .timesopen,
+     .iconT,
+      .Ikon,
+       .IkonT{
+        height: 21px!important;
+        width: 57px!important;
+        top: -175%!important;
+
+    }
+    .timesopen::after,
+    .Ikon::after,
+    .iconT::after,
+    .IkonT::after{
+        font-size: 43px!important;
+    }
+    .ruler .cm:after {
+        right: 25px!important;
+     
+    }
+}
+
+@media (max-width: 576px) { 
+    .line{
+        display: block;
+        height: 53px;
+        margin-top: 10%;
+        margin-bottom: 14%;
+        background: none;
+    }
+    .ruler .cm:after {
+        position: absolute;
+        bottom: -44px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #737373;
+        right: 39px;}
+        .date{
+            clear: both;
+            float: left;
+            margin-bottom: 10%;
+        }
+        
+        .iconT, .Ikon, .IkonT{
+            height: 30px;
+            width: 73px;
+        }
+        .progress-bak{
+            width: 30%!important;
+            margin-right: 31%;
+        } 
+
+}
+
+@media (min-width: 576px) { 
+    .ruler .cm:after {
+        position: absolute;
+        bottom: -41px;
+        font: 11px/1 sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #737373;
+        left: -20px;
+    }
+ 
+        #timesopen{
+            width: 73px;
+            position: absolute;
+           bottom: 30px;
+        }
+        .iconT, .Ikon, .IkonT{
+            
+            width: 73px;
+        }
+        
+
+        }
+        .progress-bak{
+            width: 27%!important;
+            margin-right: 31%;
+        } 
+ 
+ @media (min-width:720px) and (max-width:768px){
+     .line{
+        
+    margin-bottom: 20%; 
+     }
+ }
+ @media (min-width:768px){
+     #timesopen{
+      
+     }
+     .IkonT{
+        right: 12%;
+        top: -249%;
+     }
+   .progress-bak {
+        width: 26%!important;
+        margin-right: 30%;
+    
+     }
+ }

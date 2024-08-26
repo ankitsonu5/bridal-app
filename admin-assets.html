@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Retail.ly | Admin Assets</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content="Retail.ly">
+<meta name="keywords" content="Retail.ly">
+<meta name="author" content="Retail.ly">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
+<link href="assets/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+	
+	
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="assets/css/site.min.css">
+	<style>
+		
+	.nav.nav-tabs .nav-link.active, .light_version .nav.nav-tabs .nav-link:hover, .light_version .nav.nav-tabs .nav-link:focus 
+		{border-color: #01070b!important;
+    background: #17191c!important;
+		color:white!important;
+		}
+		.nav-item > .active > a {
+  border-color: #01070b!important;
+    background: #17191c!important;
+				color:white!important;
+}
+		
+.nav-item > a:hover {
+   background: #123751!important;
+		color:white!important;
+}
+		.nav-item > a {
+   background-color: #565656!important;
+			color:#fff!important;
+}
+	</style>
+</head>
+<body class="theme-cyan font-montserrat light_version">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+  <div class="loader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+  </div>
+</div>
+
+<!-- Theme Setting -->
+<div class="themesetting"> <a href="javascript:void(0);" class="theme_btn"><i class="icon-magic-wand"></i></a>
+  <div class="card theme_color">
+    <div class="header">
+      <h2>Theme Color</h2>
+    </div>
+    <ul class="choose-skin list-unstyled mb-0">
+      <li data-theme="green">
+        <div class="green"></div>
+      </li>
+      <li data-theme="orange">
+        <div class="orange"></div>
+      </li>
+      <li data-theme="blush">
+        <div class="blush"></div>
+      </li>
+      <li data-theme="cyan" class="active">
+        <div class="cyan"></div>
+      </li>
+      <li data-theme="indigo">
+        <div class="indigo"></div>
+      </li>
+      <li data-theme="red">
+        <div class="red"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="card font_setting">
+    <div class="header">
+      <h2>Font Settings</h2>
+    </div>
+    <div>
+      <div class="fancy-radio mb-2">
+        <label>
+          <input name="font" value="font-krub" type="radio">
+          <span><i></i>Krub Google font</span></label>
+      </div>
+      <div class="fancy-radio mb-2">
+        <label>
+          <input name="font" value="font-montserrat" type="radio" checked>
+          <span><i></i>Montserrat Google font</span></label>
+      </div>
+      <div class="fancy-radio">
+        <label>
+          <input name="font" value="font-roboto" type="radio">
+          <span><i></i>Robot Google font</span></label>
+      </div>
+    </div>
+  </div>
+  <div class="card setting_switch">
+    <div class="header">
+      <h2>Settings</h2>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item"> Light Version
+        <div class="float-right">
+          <label class="switch">
+            <input type="checkbox" class="lv-btn" checked="">
+            <span class="slider round"></span> </label>
+        </div>
+      </li>
+      <li class="list-group-item"> Horizontal Henu
+        <div class="float-right">
+          <label class="switch">
+            <input type="checkbox" class="hmenu-btn" >
+            <span class="slider round"></span> </label>
+        </div>
+      </li>
+      <li class="list-group-item"> Mini Sidebar
+        <div class="float-right">
+          <label class="switch">
+            <input type="checkbox" class="mini-sidebar-btn">
+            <span class="slider round"></span> </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<div id="wrapper">
+<nav class="navbar top-navbar">
+  <div class="container-fluid">
+    <div class="navbar-left">
+      <div class="navbar-btn"> <a href="admin-dashboard.html">Retail.ly</a>
+        <button type="button" class="btn-toggle-offcanvas"><i class="lnr lnr-menu fa fa-bars"></i></button>
+      </div>
+      <span class="ml-4">Logged in as Admin. If you are not Admin,<a href="stylist-login.html"> click here </a> to switch your account</span> </div>
+    <div class="navbar-right">
+      <div id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="javascript:void(0);" class="search_toggle icon-menu" title="Search Result"><i class="icon-magnifier"></i></a></li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown"> <i class="icon-bell"></i> <span class="notification-dot bg-azura">4</span> </a>
+            <ul class="dropdown-menu feeds_widget vivify fadeIn">
+              <li class="header blue">You have 4 New Pickup Notifications</li>
+              <li> <a href="javascript:void(0);">
+                <div class="feeds-left bg-info"><i class="fa fa-truck"></i></div>
+                <div class="feeds-body">
+                  <h4 class="title text-info">Pickup Today at 1:15 PM <small class="float-right text-muted">9:10 AM</small></h4>
+                  <small>by Client 1</small> </div>
+                </a> </li>
+              <li> <a href="javascript:void(0);">
+                <div class="feeds-left bg-info"><i class="fa fa-truck"></i></div>
+                <div class="feeds-body">
+                  <h4 class="title text-info">Pickup Today at 2:15 PM <small class="float-right text-muted">10:15 AM</small></h4>
+                  <small>by Client 2</small> </div>
+                </a> </li>
+              <li> <a href="javascript:void(0);">
+                <div class="feeds-left bg-info"><i class="fa fa-truck"></i></div>
+                <div class="feeds-body">
+                  <h4 class="title text-info">Pickup Today at 2:15 PM <small class="float-right text-muted">12:15 PM</small></h4>
+                  <small>by Client 3</small> </div>
+                </a> </li>
+              <li> <a href="javascript:void(0);">
+                <div class="feeds-left bg-info"><i class="fa fa-truck"></i></div>
+                <div class="feeds-body">
+                  <h4 class="title text-info">Pickup Today at 4:15 PM <small class="float-right text-muted">1:22 PM</small></h4>
+                  <small>by Client 4</small> </div>
+                </a> </li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="icon-bubbles"></i><span class="notification-dot bg-pink">2</span></a></li>
+          <li><a href="admin-login.html" class="icon-menu"><i class="icon-power"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+</nav>
+<div class="search_div">
+  <div class="card">
+    <div class="body">
+      <form id="navbar-search" class="navbar-form search-form">
+        <div class="input-group mb-0">
+          <input type="text" class="form-control" placeholder="Search...">
+          <div class="input-group-append"> <span class="input-group-text"><i class="icon-magnifier"></i></span> <a href="javascript:void(0);" class="search_toggle btn btn-danger"><i class="icon-close"></i></a> </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <span>Search Result <small class="float-right text-muted">About 90 results (0.47 seconds)</small></span>
+  <div class="table-responsive">
+    <table class="table table-hover table-custom spacing5">
+      <tbody>
+        <tr>
+          <td class="w40"><span>01</span></td>
+          <td><div class="d-flex align-items-center">
+              <div class="avtar-pic w35 bg-red" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>SS</span></div>
+              <div class="ml-3"> <a href="page-invoices-detail.html" title="">South Shyanne</a>
+                <p class="mb-0">south.shyanne@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>02</span></td>
+          <td><div class="d-flex align-items-center"> <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Zoe Baker</a>
+                <p class="mb-0">zoe.baker@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>03</span></td>
+          <td><div class="d-flex align-items-center">
+              <div class="avtar-pic w35 bg-indigo" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>CB</span></div>
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Colin Brown</a>
+                <p class="mb-0">colinbrown@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>04</span></td>
+          <td><div class="d-flex align-items-center">
+              <div class="avtar-pic w35 bg-green" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name"><span>KG</span></div>
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Kevin Gill</a>
+                <p class="mb-0">kevin.gill@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>05</span></td>
+          <td><div class="d-flex align-items-center"> <img src="assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Brandon Smith</a>
+                <p class="mb-0">Maria.gill@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>06</span></td>
+          <td><div class="d-flex align-items-center"> <img src="assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Kevin Baker</a>
+                <p class="mb-0">kevin.baker@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><span>07</span></td>
+          <td><div class="d-flex align-items-center"> <img src="assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="w35 h35 rounded" data-original-title="Avatar Name">
+              <div class="ml-3"> <a href="javascript:void(0);" title="">Zoe Baker</a>
+                <p class="mb-0">zoe.baker@example.com</p>
+              </div>
+            </div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="rightbar" class="rightbar">
+  <div class="body">
+    <ul class="nav nav-tabs2">
+      <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Chat-list">List</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Chat-one">Chat</a></li>
+    </ul>
+    <hr>
+    <div class="tab-content">
+      <div class="tab-pane vivify fadeIn delay-100" id="Chat-one">
+        <div class="chat_detail">
+          <ul class="chat-widget clearfix">
+            <li class="left float-left">
+              <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+              <div class="chat-info"> <span class="message">Hello, John<br>
+                What is the update on Project X?</span> </div>
+            </li>
+            <li class="right"> <img src="assets/images/xs/avatar1.jpg" class="rounded" alt="">
+              <div class="chat-info"> <span class="message">Hi, Alizee<br>
+                It is almost completed. I will send you an email later today.</span> </div>
+            </li>
+            <li class="left float-left">
+              <div class="avtar-pic w35 bg-pink"><span>KG</span></div>
+              <div class="chat-info"> <span class="message">That's great. Will catch you in evening.</span> </div>
+            </li>
+            <li class="right"> <img src="assets/images/xs/avatar1.jpg" class="rounded" alt="">
+              <div class="chat-info"> <span class="message">Sure we'will have a blast today.</span> </div>
+            </li>
+          </ul>
+          <div class="input-group mb-0">
+            <div class="input-group-prepend"> <span class="input-group-text"> <a href="javascript:void(0);" class=""><i class="icon-camera text-warning"></i></a> </span> </div>
+            <textarea type="text" row="" class="form-control" placeholder="Enter text here..."></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane vvivify fadeIn delay-100 active" id="Chat-list">
+        <ul class="right_chat list-unstyled mb-0">
+          <li class="offline"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-red"><span>FC</span></div>
+              <div class="media-body"> <span class="name unread">Folisise Chosielie</span> <span class="message">offline</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media"> <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+              <div class="media-body"> <span class="name unread">Marshall Nichols</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-red"><span>FC</span></div>
+              <div class="media-body"> <span class="name">Louis Henry</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-orange"><span>DS</span></div>
+              <div class="media-body"> <span class="name">Debra Stewart</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="offline"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-green"><span>SW</span></div>
+              <div class="media-body"> <span class="name">Lisa Garett</span> <span class="message">offline since May 12</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media"> <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+              <div class="media-body"> <span class="name">Debra Stewart</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="offline"> <a href="javascript:void(0);">
+            <div class="media"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+              <div class="media-body"> <span class="name">Lisa Garett</span> <span class="message">offline since Jan 18</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-indigo"><span>FC</span></div>
+              <div class="media-body"> <span class="name">Louis Henry</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="online"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-pink"><span>DS</span></div>
+              <div class="media-body"> <span class="name">Debra Stewart</span> <span class="message">online</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+          <li class="offline"> <a href="javascript:void(0);">
+            <div class="media">
+              <div class="avtar-pic w35 bg-info"><span>SW</span></div>
+              <div class="media-body"> <span class="name">Lisa Garett</span> <span class="message">offline since May 12</span> <span class="badge badge-outline status"></span> </div>
+            </div>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="left-sidebar" class="sidebar">
+  <div class="navbar-brand"> <a href="admin-dashboard.html"><span>Retail.ly</span></a>
+    <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right"><i class="lnr lnr-menu icon-close"></i></button>
+  </div>
+  <div class="sidebar-scroll">
+    <div class="user-account">
+      <div class="user_div"> <img src="assets/images/admin.png" class="user-photo" alt="Admin Profile Picture"> </div>
+      <div class="dropdown"> <span>Welcome,</span> <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Admin</strong></a>
+        <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
+          <li><a href="admin-profile.html"><i class="icon-user"></i>My Profile</a></li>
+          <li><a href="#"><i class="icon-envelope-open"></i>Messages</a></li>
+          <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
+          <li class="divider"></li>
+          <li><a href="stylist-login.html"><i class="icon-power"></i>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav id="left-sidebar-nav" class="sidebar-nav">
+      <ul id="main-menu" class="metismenu">
+        <li class="header">Main</li>
+        <li><a href="admin-dashboard.html"><i class="icon-home"></i><span>Admin Dashboard</span></a></li>
+        <li><a href="admin-booking.html"><i class="icon-calendar"></i><span>Bookings</span></a></li>
+        <li><a href="admin-booking-settings.html"><i class="icon-settings"></i><span>Booking Settings </span></a></li>
+        <li><a href="javascript:void(0);" onclick="ulrclickdata();" aria-expanded="true"><i class="icon-drawer"></i><span>Orders</span></a>
+						<ul aria-expanded="true" class="collapse in">
+							 <li><a href="admin-goods-sold.html"><span>Goods Sold</span></a></li>
+							 <li class="active"><a href="admin-assets.html"><span>Assets</span></a></li>
+						 </ul>
+					 </li>
+        <li><a href="admin-inventory.html"><i class="icon-calculator"></i><span>Inventory</span></a></li>
+        <li><a href="admin-previous-inventory.html"><i class="icon-folder-alt"></i><span>Previous Inventory</span></a></li>
+        <li><a href="admin-bookkeeping.html"><i class="icon-pie-chart"></i><span>Bookkeeping</span></a></li>
+        <li><a href="admin-profile.html"><i class="icon-user"></i><span>Profile</span></a></li>
+        <li><a href="admin-hours.html"><i class="fa fa-hourglass-o"></i><span>Hours</span></a></li>
+        <li><a href="admin-analytics.html"><i class="icon-bar-chart"></i><span>Analytics</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div id="main-content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row clearfix">
+        <div class="col-md-6 col-sm-12">
+          <h2>Assets</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="admin-dashboard.html">Retail.ly</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Assets</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-md-6 col-sm-12 text-right hidden-xs"> </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="card">
+        <div class="body bg-transparent">
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link show active" data-toggle="tab" href="#assets"><strong>Assets</strong></a></li>
+            <li class="nav-item hide"><a class="nav-link" data-toggle="tab" href="#missinginformation"><strong class="text-yellow"><i class="fa fa-arrow-circle-o-up"></i> Missing Information</strong></a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane show active" id="assets">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="body darktopbg">
+                      <h6 class="mb-3">Date Range by Invoice Date</h6>
+                      <div class="form-group form-inline">
+                        <label class="mr-1">From </label>
+                        <input id="purchasedfrom" class="form-control round mr-2" type="text" placeholder="(YYYY-MM-DD)"/>
+                        <label class="mr-1">To</label>
+                        <input id="purchasedto" class="form-control round mr-2" type="text" placeholder="(YYYY-MM-DD)"/>
+                        <button id="rangebutton" onclick="myFunction()" class="btn btn-info btn-round">Submit</button>
+                      </div>
+                      <span class="font-weight-bold text-yellow hide"> *Warning: There is missing information for some invoice dates that needs to be completed. </span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hide"> 
+                <!-- Assets date 1 -->
+                <div class="row ">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="body darktopbg">
+                        <div class="row">
+                          <div class="col-md-6 col-6 mb-3">
+                            <h6>Assets Date 1</h6>
+                          </div>
+                          <div class="col-md-6 col-6 text-right mb-3"> <a href="javascript:void(0);" class="btn btn-sm btn-info"><i class="fa fa-external-link"></i> Export Selected</a> <a href="javascript:void(0);" class="btn btn-success btn-sm"><i class="fa fa-external-link"></i> Export All</a>   </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="table-responsive">
+                            <table class="table table-custom2 table-hover darkbg">
+                              <thead>
+                                <tr>
+                                  <th class="w30"> <label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></th>
+                                  <th>Item <br>
+                                    Name</th>
+                                  <th>SKU</th>
+                                  <th>UPC</th>
+                                  <th>Manufacturer’s<br>
+                                    Name</th>
+                                  <th>Manufacturer’s<br>
+                                    Item Code</th>
+                                  <th>Wholesale <br>
+                                    Price</th>
+                                  <th>Invoice<br>
+                                    PDF</th>
+                                  <th>Invoice <br>
+                                    Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>Colin Brown</td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Assets date 2 -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="body darktopbg">
+                        <div class="row">
+                          <div class="col-md-6 col-6 mb-3">
+                            <h6>Assets Date 2</h6>
+                          </div>
+                          <div class="col-md-6 col-6 text-right mb-3"> <a href="javascript:void(0);" class="btn btn-sm btn-info"><i class="fa fa-external-link"></i> Export Selected</a> <a href="javascript:void(0);" class="btn btn-success btn-sm"><i class="fa fa-external-link"></i> Export All</a>   </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="table-responsive">
+                            <table class="table table-custom2 table-hover darkbg">
+                              <thead>
+                                <tr>
+                                  <th class="w30"> <label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></th>
+                                  <th>Item <br>
+                                    Name</th>
+                                  <th>SKU</th>
+                                  <th>UPC</th>
+                                  <th>Manufacturer’s<br>
+                                    Name</th>
+                                  <th>Manufacturer’s<br>
+                                    Item Code</th>
+                                  <th>Wholesale <br>
+                                    Price</th>
+                                  <th>Invoice<br>
+                                    PDF</th>
+                                  <th>Invoice <br>
+                                    Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>094428265643</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td>Colin Brown</td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Assets Sold Between -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="body darktopbg">
+                        <div class="row">
+                          <div class="col-md-6 col-6 mb-3">
+                            <h6>Assets Sold Between 1st date and 2nd date</h6>
+                          </div>
+                          <div class="col-md-6 col-6 text-right mb-3"> <a href="javascript:void(0);" class="btn btn-sm btn-info"><i class="fa fa-external-link"></i> Export Selected</a> <a href="javascript:void(0);" class="btn btn-success btn-sm"><i class="fa fa-external-link"></i> Export All</a>   </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="table-responsive">
+                            <table class="table table-custom2 table-hover darkbg">
+                              <thead>
+                                <tr>
+                                  <th class="w30"> <label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></th>
+                                  <th>Date<br>
+                                    Sold</th>
+                                  <th>Customer<br>
+                                    Name</th>
+                                  <th>Item <br>
+                                    Name</th>
+                                  <th>SKU <br>
+                                    Code</th>
+                                  <th>UPC</th>
+                                  <th>Manufacturer’s<br>
+                                    Name</th>
+                                  <th>Manufacturer’s<br>
+                                    Item Code</th>
+                                  <th>Wholesale <br>
+                                    Price</th>
+                                  <th>Invoice<br>
+                                    PDF</th>
+                                  <th>Invoice <br>
+                                    Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-14-19</td>
+                                  <td>South Shyanne</td>
+                                  <td>JIW 1</td>
+                                  <td> 09442826 </td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-09-19</td>
+                                  <td>Kevin Gill</td>
+                                  <td>JIW 1</td>
+                                  <td> 09442826 </td>
+                                  <td><span>0944282</span></td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-08-19</td>
+                                  <td>Zoe Baker</td>
+                                  <td>JIW 1</td>
+                                  <td> 09442826 </td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>29-07-19</td>
+                                  <td>Colin Brown</td>
+                                  <td>JIW 1</td>
+                                  <td> 09442826 </td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Assets Purchased Between -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="body darktopbg">
+                        <div class="row">
+                          <div class="col-md-6 col-6 mb-3">
+                            <h6>Assets Purchased Between 1st date and 2nd date</h6>
+                          </div>
+                          <div class="col-md-6 col-6 text-right mb-3"> <a href="javascript:void(0);" class="btn btn-sm btn-info"><i class="fa fa-external-link"></i> Export Selected</a> <a href="javascript:void(0);" class="btn btn-success btn-sm"><i class="fa fa-external-link"></i> Export All</a>   </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="table-responsive">
+                            <table class="table table-custom2 table-hover darkbg">
+                              <thead>
+                                <tr>
+                                  <th class="w30"> <label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></th>
+                                  <th>Date Entered <br>
+                                    into Inventory </th>
+                                  <th>Item <br>
+                                    Name</th>
+                                  <th>SKU <br>
+                                    Code</th>
+                                  <th>UPC</th>
+                                  <th>Manufacturer’s<br>
+                                    Name</th>
+                                  <th>Manufacturer’s<br>
+                                    Item Code</th>
+                                  <th>Wholesale <br>
+                                    Price</th>
+                                  <th>Invoice<br>
+                                    PDF</th>
+                                  <th>Purchased <br>
+                                    Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-14-19</td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-09-19</td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td><span>0944282</span></td>
+                                  <td><span>Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>12-08-19</td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                                <tr>
+                                  <td><label class="fancy-checkbox margin-0">
+                                      <input type="checkbox" name="checkbox" class="checkbox-tick">
+                                      <span></span> </label></td>
+                                  <td>29-07-19</td>
+                                  <td>JIW 1</td>
+                                  <td>09442826</td>
+                                  <td><span> 0944282</span></td>
+                                  <td><span >Casablanca</span></td>
+                                  <td><span>2201</span></td>
+                                  <td>$6600</td>
+                                  <td><a target="_blank" href="assets/images/InvoiceSimple-PDF-Template.pdf"><i class="fa fa-file-pdf-o fa-2x text-yellow"></i></a></td>
+                                  <td>12/25/19</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                              <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="missinginformation">
+              <div class="row pl-3 pr-3">
+				   <div class="card">
+                      <div class="body darktopbg">
+                        <div class="row">
+                <div class="col-md-6 col-6">
+                  <h6>
+                    <p class="text-yellow">*Warning: There is information for invoice date that needs to be completed.</p>
+                  </h6>
+                </div>
+                <div class="col-md-6 col-6 text-right mb-3"> <a href="javascript:void(0);" class="btn btn-sm btn-info"><i class="fa fa-external-link"></i> Export Selected</a> <a href="javascript:void(0);" class="btn btn-success btn-sm"><i class="fa fa-external-link"></i> Export All</a>   </div>
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table class="table table-custom2 table-hover darkbg">
+                      <thead>
+                        <tr>
+                          <th class="w30"> <label class="fancy-checkbox margin-0">
+                              <input type="checkbox" name="checkbox" class="checkbox-tick">
+                              <span></span> </label></th>
+                          <th>Date Entered <br>
+                            into Inventory </th>
+                          <th>Item <br>
+                            Name</th>
+                          <th>SKU <br>
+                            Code</th>
+                          <th>UPC</th>
+                          <th>Manufacturer’s<br>
+                            Name</th>
+                          <th>Manufacturer’s<br>
+                            Item Code</th>
+                          <th>Wholesale <br>
+                            Price</th>
+                          <th>Invoice<br>
+                            PDF</th>
+                          <th>Purchased <br>
+                            Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><label class="fancy-checkbox margin-0">
+                              <input type="checkbox" name="checkbox" class="checkbox-tick">
+                              <span></span> </label></td>
+                          <td>12-14-19</td>
+                          <td><span class="text-yellow font-20">*</span>JIW 1</td>
+                          <td>09442826</td>
+                          <td><span> 0944282</span></td>
+                          <td><span>Casablanca</span></td>
+                          <td><span>2201</span></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                        </tr>
+                        <tr>
+                          <td><label class="fancy-checkbox margin-0">
+                              <input type="checkbox" name="checkbox" class="checkbox-tick">
+                              <span></span> </label></td>
+                          <td>12-09-19</td>
+                          <td><span class="text-yellow font-20">*</span>JIW 1</td>
+                          <td>09442826</td>
+                          <td><span>0944282</span></td>
+                          <td><span>Casablanca</span></td>
+                          <td><span>2201</span></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                        </tr>
+                        <tr>
+                          <td><label class="fancy-checkbox margin-0">
+                              <input type="checkbox" name="checkbox" class="checkbox-tick">
+                              <span></span> </label></td>
+                          <td>12-14-19</td>
+                          <td><span class="text-yellow font-20">*</span>JIW 1</td>
+                          <td>09442826</td>
+                          <td><span> 0944282</span></td>
+                          <td><span>Casablanca</span></td>
+                          <td><span>2201</span></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                        </tr>
+                        <tr>
+                          <td><label class="fancy-checkbox margin-0">
+                              <input type="checkbox" name="checkbox" class="checkbox-tick">
+                              <span></span> </label></td>
+                          <td>12-09-19</td>
+                          <td><span class="text-yellow font-20">*</span>JIW 1</td>
+                          <td>09442826</td>
+                          <td><span>0944282</span></td>
+                          <td><span>Casablanca</span></td>
+                          <td><span>2201</span></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                          <td><a data-toggle="modal" data-target="#updateModalCenter" href="#"><span class="text-yellow">*Missing<br>
+                            Information</span></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                      <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			  </div>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+	
+<!-- Edit -->
+<div class="modal fade" id="editModalCenter" tabindex="-1" role="dialog" aria-labelledby="editModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalCenterTitle">Item Name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <div class="row clearfix">
+          <div class="col-12">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th>item Image</th>
+                    <td><img src="assets/images/product/product1.jpg" data-toggle="tooltip" data-placement="top" title="item image" alt="item" class="rounded"></td>
+                  </tr>
+                  <tr>
+                    <th>SKU Code</th>
+                    <td>09442826 </td>
+                  </tr>
+                  <tr>
+                    <th>UPC</th>
+                    <td>094428265643 </td>
+                  </tr>
+                  <tr>
+                    <th>Manufacturer’s Name</th>
+                    <td>Casablanca</td>
+                  </tr>
+                  <tr>
+                    <th>Manufacturer’s Item Code</th>
+                    <td> 2201 </td>
+                  </tr>
+                  <tr>
+                    <th>Retail Price</th>
+                    <td><div class="input-group mb-3">
+                        <div class="input-group-prepend"> <span class="input-group-text"><i class="fa fa-dollar"></i></span> </div>
+                        <input type="text" class="form-control money-dollar" value="2000">
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <th>Designer</th>
+                    <td> Designer 1 </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-round btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-round btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Update -->
+<div class="modal fade" id="updateModalCenter" tabindex="-1" role="dialog" aria-labelledby="updateModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalCenterTitle">Update Missing Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <div class="row clearfix">
+          <div class="col-12 col-sm-12">
+            <label class="mb-2">Wholesale Price </label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text"><i class="fa fa-dollar"></i></span> </div>
+              <input type="text" class="form-control money-dollar" >
+            </div>
+            <label class="mb-2"> Invoice Date </label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text"><i class="fa fa-calendar"></i></span> </div>
+              <input id="invoicedates" type="text" class="form-control">
+            </div>
+            <label class="mb-2">Upload Invoice</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend"> <span class="input-group-text"><i class="fa fa-file-pdf-o"></i></span> </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-round btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-round btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Javascript --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> 
+<script src="assets/bundles/vendorscripts.bundle.js"></script> 
+<script src="assets/bundles/mainscripts.bundle.js"></script> 
+<script src="assets/js/pages/tables/jquery-datatable.js"></script> 
+<script src="assets/js/pages/ui/dialogs.js"></script> 
+<!-- Vendor Plugin Js --> 
+<script src="assets/vendor/sweetalert/sweetalert.min.js"></script> 
+<script src="assets/vendor/datetimepicker/js/moment.min.js"></script> 
+<script src="assets/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js"></script> 
+<script>	
+	
+	$(function () {
+		
+  $("#rangebutton").click(function(){
+  $(".hide").removeClass("hide");});
+  
+    $('#purchasedfrom').datetimepicker({
+                format: 'MM-DD-YYYY'
+            });
+            
+   $('#purchasedto').datetimepicker({
+                format: 'MM-DD-YYYY'
+            });
+		 
+		 
+});
+	</script>
+</body>
+</html>
